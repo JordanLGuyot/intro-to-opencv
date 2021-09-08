@@ -2,8 +2,8 @@ import cv2
 import numpy
 
 #reading images
-img = cv2.imread('Photos/puppy.jpg')
-cv2.imshow('Puppy', img)
+img = cv2.imread('heart.png')
+cv2.imshow('heart', img)
 
 cv2.resize(img, (1000,1000))
 
@@ -19,7 +19,7 @@ img = cv2.Canny(img,200,200)
 cv2.imshow('greyscale, blur, canny',img)
 
 #rotate
-img = cv2.imread('Photos/Puppy.jpg')
+img = cv2.imread('heart.png')
 
 (height,width)=img.shape[:2]
 rotPoint=(width//2,height//2)
